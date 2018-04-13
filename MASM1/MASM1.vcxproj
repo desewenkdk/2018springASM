@@ -24,6 +24,7 @@
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>MASM1</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+    <ProjectName>s141506</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -95,11 +96,11 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Users\SOGANG\Documents\Visual Studio 2017\Projects\MASM1\MASM1\Irvine;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>irvine32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Irvine;C:\Users\SOGANG\source\repos\2018springASM\MASM1\Irvine;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>irvine32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <MASM>
-      <IncludePaths>C:\Users\SOGANG\Documents\Visual Studio 2017\Projects\MASM1\MASM1\Irvine</IncludePaths>
+      <IncludePaths>C:\Users\SOGANG\source\repos\2018springASM\MASM1\Irvine;C:\Irvine;%(IncludePaths)</IncludePaths>
       <AssembledCodeListingFile>$(ProjectName).lst</AssembledCodeListingFile>
     </MASM>
   </ItemDefinitionGroup>
@@ -115,7 +116,13 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Irvine;C:\Users\SOGANG\source\repos\2018springASM\MASM1\Irvine;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>irvine32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
+    <MASM>
+      <IncludePaths>C:\Users\SOGANG\source\repos\2018springASM\MASM1\Irvine;C:\Irvine;%(IncludePaths)</IncludePaths>
+      <AssembledCodeListingFile>$(ProjectName).lst</AssembledCodeListingFile>
+    </MASM>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -154,9 +161,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <MASM Include="20141506.asm">
-      <FileType>Document</FileType>
-    </MASM>
+    <MASM Include="141506.asm" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="hw2.inc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

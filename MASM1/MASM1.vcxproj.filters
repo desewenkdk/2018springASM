@@ -15,8 +15,13 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <MASM Include="20141506.asm">
+    <MASM Include="141506.asm">
       <Filter>소스 파일</Filter>
     </MASM>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="hw2.inc">
+      <Filter>소스 파일</Filter>
+    </None>
   </ItemGroup>
 </Project>
